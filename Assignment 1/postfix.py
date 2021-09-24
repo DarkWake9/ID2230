@@ -34,3 +34,4 @@ def postfixexp(expression1):
             #    return 3
     #print(f"{s.Top()}")    
     return s.Top()
+print(f"{postfixexp(expression1)}")
