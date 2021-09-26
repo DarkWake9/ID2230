@@ -29,4 +29,3 @@ class PostFixExpr():
         return self.s.Top()
 
 expression1 = ['2','23','+','11','12','13','-','*','-']
-exp = 

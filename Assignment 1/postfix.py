@@ -1,5 +1,8 @@
 from oop1 import Stacks
-expression1 = ['2','23','+','11','12','13','-','*','-', '35']
+def inputexp():
+    pass
+def validate(expression1):
+    pass
 
 def postfixexp(expression1):
     s = Stacks()
@@ -33,7 +36,7 @@ def validate(expression1):
         elif i== '+' or i== '-' or i== '*' or i== '/':
             k = k+1
         else:
-            print(f"Invalid character at {s.array.index(x)}")
+            print(f"Invalid character at {expression1.index(x)}")
             return 3
 
     if j == k+1:
@@ -41,4 +44,12 @@ def validate(expression1):
     else:
         print("Invalid Expression")
         return 4
-print(f"{validate(expression1)}")
+
+def inputexp():
+    n = int(input("Enter the length of the postfix expression: "))
+    expression1 = []
+    for i in range(1,n+1):
+        expression1.append(input(f"Enter the {i}^th element: "))
+
+    return validate(expression1)
+print(f"{inputexp()}")
