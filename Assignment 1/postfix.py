@@ -36,7 +36,7 @@ def validate(expression1):
         elif i== '+' or i== '-' or i== '*' or i== '/':
             k = k+1
         else:
-            print(f"Invalid character at {expression1.index(x)}")
+            print(f"Invalid character at {expression1.index(i)}")
             return 3
 
     if j == k+1:
