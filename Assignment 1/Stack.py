@@ -20,7 +20,6 @@ class Stacks:
             print("**Stack is Empty**")
             return 1
         else:
-            print("**Stack is Not Empty**")
             return 0
     
     def Pop(self):
