@@ -17,10 +17,10 @@ class Stacks:
 
     def IsEmpty(self):
         if len(self.array) == 0:
-            #print("Stack is Empty")
+            print("**Stack is Empty**")
             return 1
         else:
-            #print("Stack is Not Empty")
+            print("**Stack is Not Empty**")
             return 0
     
     def Pop(self):
