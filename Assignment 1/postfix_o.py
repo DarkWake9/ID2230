@@ -1,12 +1,14 @@
 from Stack import Stacks
 class PostFixExpr():
-    def inputexp():
+    #def inputexp():
+     #   pass
+
+    #def validate(expression1):
+     #   pass
+    def __init__(self):
         pass
 
-    def validate(expression1):
-        pass
-
-    def postfixexp(expression1):
+    def postfixexp(self, expression1):
         s = Stacks()
         for x in expression1:
             if x.isdigit() == True:
@@ -29,7 +31,7 @@ class PostFixExpr():
                 s.Push(b/a)
         return s.Top()
     
-    def validate(expression1):
+    def validate(self, expression1):
         j=0
         k=0
         for i in expression1:
@@ -52,10 +54,8 @@ class PostFixExpr():
         expression1 = []
         for i in range(1,n+1):
             expression1.append(input(f"Enter the {i}^th element: "))
-
         return validate(expression1)
     
 
-print(f"{inputexp()}")
-
-expression1 = ['2','23','+','11','12','13','-','*','-']
+#print(f"{inputexp()}")
+#expression1 = ['2','23','+','11','12','13','-','*','-']
