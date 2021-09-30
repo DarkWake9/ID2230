@@ -1,7 +1,7 @@
 from Stack import Stacks
 
 class PostFixExpr():
-    
+
     def __init__(self):
         self.expression1 = []
         n = int(input("Enter the length of the postfix expression: "))
@@ -53,4 +53,4 @@ class PostFixExpr():
     
 #Driver Code
 newexp = PostFixExpr()
-print(exp.validate())
+print(newexp.validate())
